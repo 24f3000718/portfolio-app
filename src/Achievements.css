@@ -1,0 +1,16 @@
+.Achievements {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+}
+.Achievement {
+  margin: 10px;
+  padding: 20px;
+  background-color: #C9ADA7;
+  text-align: center;
+  font-size: 17px;
+}
+img{
+  width: 150px;
+  border-radius: 50%;
+}

@@ -1,0 +1,10 @@
+.skills-container{
+  display:grid;
+  justify-content: center;
+}
+.skill{
+  margin: 10px;
+  padding: 20px;
+  background-color: #C9ADA7;
+  border-radius: 5px;
+}

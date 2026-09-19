@@ -1,0 +1,15 @@
+img{
+  padding: 80px;
+}
+.About-Me-content{
+  display:flex;
+  align-items: center;
+}
+.About-Me-text{
+  text-align: justify;
+  margin-right: 50px;
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  color:  #22223B;
+  font-size: 25px;
+}
