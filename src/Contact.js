@@ -1,6 +1,5 @@
 import React from 'react';
 function Contact() {
-  const newLocal = <br></br>;
   return (
     <div style={{ backgroundColor: '#F2E9E4', fontFamily: 'emoji' ,color: '#22223B',overflow:'hidden'}}>
     <div className="Contact">
@@ -11,9 +10,9 @@ function Contact() {
       Email : samreenkausar1306@gmail.com
       <br></br>
       <br></br>
-      <a href = "https://www.linkedin.com/in/samreen-kausar-701701326/" target="_blank"  style={{color:'#22223B',margin:'0px'}}>LinkedIn</a>
+      <a href = "https://www.linkedin.com/in/samreen-kausar-701701326/" rel="noreferrer" target="_blank"  style={{color:'#22223B',margin:'0px' }}>LinkedIn</a>
       <br></br>
-      <a href = "https://github.com/24f3000718" target="_blank" style={{color:'#22223B',margin:'0px'}}>GitHub</a>
+      <a href = "https://github.com/24f3000718" rel="noreferrer" target="_blank" style={{color:'#22223B',margin:'0px'}}>GitHub</a>
       <br></br>
       <br></br>
       <br></br>
