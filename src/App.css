@@ -1,50 +1,95 @@
+
+
 .App {
-  text-align: center;
+  background-color: #22223B;
+  color: #F2E9E4;
+  font-family: "Lato", sans-serif;
+  padding: 20px 30px;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.App .name {
+  text-align: left;
+  font-size: 40px;
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  color: #F2E9E4;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App .nav-links {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-.App{
-  color: white;
-  text-align: right;
-  background-color: #22223B ;
-  font-family: Lato, sans-serif;
-  font-size: 25px;
-}
-a{  
+.App .nav-links a {
   color: #F2E9E4;
   text-decoration: none;
-  margin: 0 10px;
+  font-size: 23px;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: 
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.2s ease;
+}
+
+/* Hover effect */
+.App .nav-links a:hover {
+  background-color: #C9ADA7;
+  color: #22223B;
+  transform: translateY(-2px);
+}
+
+
+@media (max-width: 800px) {
+
+  .App {
+    padding: 20px;
+  }
+
+  .App .name {
+    text-align: center;
+    margin-left: 0;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .App .nav-links {
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .App .nav-links a {
+    font-size: 15px;
+    padding: 7px 9px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .App {
+    padding: 15px 10px;
+  }
+
+  .App .name {
+    font-size: 27px;
+  }
+
+  .App .nav-links {
+    gap: 3px;
+  }
+
+  .App .nav-links a {
+    font-size: 13px;
+    padding: 6px 7px;
+  }
 }

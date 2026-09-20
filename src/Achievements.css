@@ -1,16 +1,56 @@
 .Achievements {
-  display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  max-width: 1300px;
+  margin: 20px auto;
+  padding: 30px 50px 60px;
 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
 }
+
 .Achievement {
-  margin: 10px;
-  padding: 20px;
+  padding: 30px 25px;
+
   background-color: #C9ADA7;
+  color: #22223B;
+
   text-align: center;
   font-size: 17px;
+  line-height: 1.6;
+
+  border-radius: 15px;
+
+  box-shadow: 0 8px 20px rgba(34, 34, 59, 0.15);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-img{
-  width: 150px;
+
+.Achievement:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 14px 28px rgba(34, 34, 59, 0.22);
+}
+
+.Achievement img {
+  width: 120px;
+  height: 120px;
+
+  object-fit: contain;
+
+  margin-bottom: 20px;
+
   border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .Achievements {
+    padding: 20px 20px 40px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .Achievement {
+    padding: 25px 20px;
+    font-size: 16px;
+  }
 }
