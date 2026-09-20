@@ -5,6 +5,7 @@ import Skills from './Skills';
 import Achievements from './Achievements'; 
 import Contact from './Contact'; 
 import Queries from './Queries';
+import Projects from './Projects';
 
 function AppContent() {
   const location = useLocation();   
@@ -20,6 +21,7 @@ function AppContent() {
         <Link to='/'>About Me</Link> &nbsp;
         <Link to='/Skills' >Skills</Link> &nbsp;
         <Link to='/Achievements' >Achievements</Link> &nbsp;
+        <Link to='/Projects'>Projects</Link>&nbsp;
         <Link to='/Contact' >Contact</Link> &nbsp;
         <Link to='/Queries' >Queries</Link>&nbsp;
       </nav>
@@ -29,6 +31,7 @@ function AppContent() {
         <Route path='/' element={<AboutMe />} /> 
         <Route path='/Skills' element={<Skills />} /> 
         <Route path='/Achievements' element={<Achievements />} /> 
+        <Route path='/Projects' element={<Projects />} />
         <Route path='/Contact' element={<Contact />} /> 
         <Route path='/Queries' element={<Queries />} />
       </Routes> 

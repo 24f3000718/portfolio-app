@@ -1,0 +1,149 @@
+.Projects {
+  margin: 20px auto;
+  padding: 30px 50px 60px;
+  max-width: 1300px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 30px;
+}
+
+.Project {
+  padding: 35px;
+  background-color: #C9ADA7;
+  text-align: center;
+  font-size: 17px;
+  border-radius: 15px;
+
+  box-shadow: 0 8px 20px rgba(34, 34, 59, 0.15);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.Project:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(34, 34, 59, 0.22);
+}
+
+.Project h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 25px;
+  color: #22223B;
+}
+
+
+.Project p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+
+.Project h3 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #22223B;
+}
+
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+.technologies span {
+  background-color: #4A4E69;
+  color: #F2E9E4;
+
+  padding: 7px 13px;
+  border-radius: 20px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Technology tag hover */
+.technologies span:hover {
+  background-color: #22223B;
+  transform: translateY(-2px);
+}
+
+.doc-button {
+  display: inline-block;
+
+  margin-top: 30px;
+  padding: 11px 20px;
+
+  background-color: #22223B;
+  color: #F2E9E4;
+
+  text-decoration: none;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  transition: background-color 0.3s ease,
+              transform 0.2s ease,
+              box-shadow 0.3s ease;
+}
+
+
+.doc-button:hover {
+  background-color: #4A4E69;
+  color: #F2E9E4;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 5px 12px rgba(34, 34, 59, 0.25);
+}
+
+@media (max-width: 768px) {
+  .Projects {
+    margin: 10px;
+    padding: 20px 15px 40px;
+
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .Project {
+    padding: 25px 20px;
+  }
+
+  .Project h2 {
+    font-size: 22px;
+  }
+
+  .Project p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .Projects {
+    padding: 15px 10px 30px;
+  }
+
+  .Project {
+    padding: 22px 15px;
+  }
+
+  .technologies span {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+
+  .doc-button {
+    font-size: 13px;
+    padding: 10px 16px;
+  }
+}
